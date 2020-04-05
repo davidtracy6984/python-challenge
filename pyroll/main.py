@@ -45,7 +45,7 @@ print('Winner: ' + str(maxname) )
 
 output_path = os.path.join('analysis', 'results.txt')     
 with open(output_path, 'w') as csvfile:
-                csvwriter = csv.writer(csvfile, delimiter=',')
+                csvwriter = csv.writer(csvfile, delimiter=' ')
                 csvwriter.writerow(['Election Results'])   
                 csvwriter.writerow(['--------------------------------'])  
                 csvwriter.writerow(['Total Votes: ' + str(cval)]) 
